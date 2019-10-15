@@ -1,0 +1,214 @@
+body {
+    background: #effee6;
+    background: -webkit-linear-gradient(-45deg, #effee6, #fefefc);
+    background: linear-gradient(-45deg, #effee6, #fefefc);
+    font-family: "Roboto", "san-serif";   
+}
+
+/* hero container */
+.hero-container {
+    height: auto;
+    margin-top: 10%; 
+    width: 100%; 
+}
+
+.title {
+    color: #696969;   
+    font-size: 3em; 
+    padding: 0.5em; 
+    text-align: center;                
+}            
+
+.cta-phrase {
+    color: #696969; 
+    text-align: center;                
+}
+
+/* form for Pokémon search*/
+.pokemon-form {
+    text-align: center; 
+    width: 100%; 
+}
+
+.pokemon-input {   
+    background-color: white;  
+    background-image: url('./img/pokeball.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;                
+    box-sizing: border-box;        
+    border: 2px solid #ccc;
+    border-radius: 5px; 
+    font-size: 1em; 
+    padding: 0.75em 0.75em 0.75em 50px;
+    margin: 0.5em; 
+    width: 50%; 
+}   
+
+@media screen and (min-width: 1550px) {
+
+    .pokemon-input {                      
+        width: 25%; 
+    }                  
+
+}
+
+.pokemon-submit {                
+    background-color: #1c8695;
+    background-color: -webkit-linear-gradient(-45deg, #1d8596, #1c8695);
+    background-color: linear-gradient(-45deg, #1d8596, #1c8695);     
+    border: none;
+    border-radius: 5px; 
+    color: white;
+    cursor: pointer; 
+    display: inline-block;
+    font-size: 16px;
+    padding: 1em 2em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.pokemon-submit:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);             
+}
+
+/* container for Pokémon */
+.pokemon-container {
+    align-items: center; 
+    display: flex; 
+    flex-wrap: wrap; 
+    margin-top: 10%;                 
+    justify-content: center; 
+    width: 100%; 
+}
+
+.pokemon-card {
+    background: #d1ebe7;
+    background: -webkit-linear-gradient(to bottom, #d5eeef, #d1ebe7);
+    background: linear-gradient(to bottom, #d5eeef, #d1ebe7);                
+    border-radius: 5px;  
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    cursor: pointer; 
+    margin: 1em;
+    padding: 1em; 
+}
+
+.pokemon-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}            
+
+.pokemon-number {
+    color: #808080;
+    display: block;
+    font-size: 0.75em; 
+    text-align: center;
+}
+
+.pokemon-name {
+    display: block;
+    font-size: 1em; 
+    text-align: center; 
+    text-transform: capitalize; 
+}
+
+.pokemon-type {
+    color: #696969; 
+    display: block;
+    font-family: "Roboto", "san-serif";
+    font-size: 0.90em; 
+    text-align: center; 
+    text-transform: capitalize; 
+}            
+
+/* error message */
+.error-message {
+    font-size: 2em; 
+}    
+
+/* modal background */
+.modal {
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+    height: 100%;
+    left: 0;
+    overflow: auto; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* modal container */
+.modal-content {
+    background: #d1ebe7;
+    background: -webkit-linear-gradient(to bottom, #d5eeef, #d1ebe7);
+    background: linear-gradient(to bottom, #d5eeef, #d1ebe7);  
+    border-radius: 5px;  
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);    
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    margin: 15% auto;
+    padding: 20px;
+    width: 75%; 
+}
+
+.modal-left {
+    align-items: center; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+.modal-identity {
+    text-align: center;
+}
+
+.modal-name {
+    display: block;
+    font-size: 1.25em; 
+    margin: 0; 
+    text-align: center; 
+    text-transform: capitalize; 
+}
+
+.modal-number {
+    color: #808080;
+    display: block;
+    margin: 0;     
+    text-align: center;
+}
+
+.modal-types {
+    text-transform: capitalize;
+}
+
+.modal-stats {
+    margin: 1em 0; 
+}
+
+.modal-stat {
+    display: block;
+}
+
+.fas {
+    color: #696969;    
+}
+
+.far {
+    color: #808080;    
+}
+
+/* exit button */
+.close-button {
+    color: #effee6;
+    font-size: 3em;
+    font-weight: bold;
+    padding: 0.25em; 
+    position: absolute;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
